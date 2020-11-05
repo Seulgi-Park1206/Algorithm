@@ -24,6 +24,7 @@ for coin in coin_types:
     coin_count.append(c_count)
     print(">> %d원짜리 %d개 | 남은 거스름돈 : %d" %(coin, c_count, n))
 print('-'*50)
+
 # 구해야 하는 개수 및 각 단위별 필요한 개수 출력
 print(">>> 거슬러 줘야 할 동전의 개수 : %d개" %(count))
 for i in range(len(coin_types)):
