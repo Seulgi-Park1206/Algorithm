@@ -40,27 +40,15 @@
 1. 각 행을 입력받아서 행의 최솟값을 구하기.
 2. 구한 최솟값들 중에서 가장 큰 수를 출력.
 '''
-import time
-#from ..check_memory.check_usage_of_memory import check_usage_of_memory
 # N, M을 공백으로 구분하여 입력 받기
 n, m = map(int, input().split())
-#t = 0   # 최솟값을 구하고 그들 중 최댓값을 찾는 시간
-#end_t = 0   # 마지막 for문 끝나는 시간
 result = 0
 # 한 줄씩 입력받아 확인
 for i in range(n):
     data = list(map(int, input().split()))
-#    start_time = time.time()
     # 입력받은 행에서 최솟값 구하기
     min_value = min(data)
     # 최솟값들 중에서 가장 큰 수 구하기
     result = max(result, min_value)
-#    end_time = time.time()
-#    end_t = end_time
-#    t += end_time - start_time
 
 print(result)   # 최종 답 출력
-#end_time = time.time() - end_t
-#t += end_time
-#print("시간:", t)
-#check_usage_of_memory()
